@@ -5,12 +5,16 @@ import { Nav, Container } from "react-bootstrap";
 import Logo from "./nav-main-logo.svg";
 
 function NavigationBar() {
-
   return (
     <header>
       <Nav className="navbar navbar-expand-lg navbar-dark bg-secondary">
         <Container className="container-fluid">
-          <img className='img-fluid image-decoration-none' src={Logo} alt="" width="150" />
+          <img
+            className="img-fluid image-decoration-none"
+            src={Logo}
+            alt=""
+            width="150"
+          />
           <button
             className="navbar-toggler"
             type="button"
@@ -25,15 +29,19 @@ function NavigationBar() {
           <Container className="collapse navbar-collapse" id="navbarScroll">
             <ul
               className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-              style={{scrollHeight: '100px'}}
+              style={{ scrollHeight: "100px" }}
             >
-              <Link to="/" className="nav-item" class='text-decoration-none'>
-                <a className="nav-link" aria-current="page">All Tickets</a>
-              </Link>
-              <Link to="/new-ticket" className="nav-item" class='text-decoration-none'>
-                <a className="nav-link">
-                  New Ticket
+              <Link to="/" className="nav-item" class="text-decoration-none">
+                <a className="nav-link" aria-current="page" to="/">
+                  All Tickets
                 </a>
+              </Link>
+              <Link
+                to="/new-ticket"
+                className="nav-item"
+                class="text-decoration-none"
+              >
+                <a className="nav-link">New Ticket</a>
               </Link>
               <li className="nav-item dropdown">
                 <a
@@ -49,10 +57,22 @@ function NavigationBar() {
                   className="dropdown-menu"
                   aria-labelledby="navbarScrollingDropdown"
                 >
-                <a className="dropdown-item" target='_blank' href='https://swaps.harbortouch.com/'>Swap system</a>
-                <a className="dropdown-item" target='_blank' href='https://supplies.harbortouch.com/'>Supplies</a>
-                <hr className="dropdown-divider" />
-                  <Link to="/tools" className='text-decoration-none'>
+                  <a
+                    className="dropdown-item"
+                    target="_blank"
+                    href="https://swaps.harbortouch.com/"
+                  >
+                    Swap system
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    target="_blank"
+                    href="https://supplies.harbortouch.com/"
+                  >
+                    Supplies
+                  </a>
+                  <hr className="dropdown-divider" />
+                  <Link to="/tools" className="text-decoration-none">
                     <a className="dropdown-item">Set favorites</a>
                   </Link>
                 </ul>
@@ -71,9 +91,13 @@ function NavigationBar() {
                   className="dropdown-menu"
                   aria-labelledby="navbarScrollingDropdown"
                 >
-                <Link to='/user-access' className='text-decoration-none'><a className="dropdown-item">User Access</a></Link>
-                <hr className="dropdown-divider" />
-                <Link to='/reporting' className='text-decoration-none'><a className="dropdown-item">Reporting</a></Link>
+                  <Link to="/user-access" className="text-decoration-none">
+                    <a className="dropdown-item">User Access</a>
+                  </Link>
+                  <hr className="dropdown-divider" />
+                  <Link to="/reporting" className="text-decoration-none">
+                    <a className="dropdown-item">Reporting</a>
+                  </Link>
                 </ul>
               </li>
             </ul>
