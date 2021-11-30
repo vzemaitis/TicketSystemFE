@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import AllTickets from "./components/Layout/pages/Alltickets";
-import NewTickets from "./components/Layout/pages/NewTickets";
-import UserAccess from "./components/Layout/pages/UserAccess";
-import Reporting from "./components/Layout/pages/Reporting";
+import AllTickets from "./components/pages/Alltickets";
+import NewTickets from "./components/pages/NewTickets";
+import UserAccess from "./components/pages/UserAccess";
+import Reporting from "./components/pages/Reporting";
 import NavigationBar from "./components/Layout/navigation-bar/MainNavigationBar";
-import Tools from "./components/Layout/pages/Tools";
+import Tools from "./components/pages/Tools";
 import SideMenu from "./components/Layout/Sidemenu/Sidemenu";
 
 function App() {
