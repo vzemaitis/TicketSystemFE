@@ -7,7 +7,7 @@ import Logo from "./nav-main-logo.svg";
 function NavigationBar() {
   return (
     <header>
-      <Nav className="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <Nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <Container className="container-fluid">
           <img
             className="img-fluid image-decoration-none"
@@ -32,7 +32,7 @@ function NavigationBar() {
               style={{ scrollHeight: "100px" }}
             >
               <Link to="/" className="nav-item" class="text-decoration-none">
-                <a className="nav-link" aria-current="page" to="/">
+                <a className="nav-link" aria-current="page">
                   All Tickets
                 </a>
               </Link>
@@ -101,17 +101,6 @@ function NavigationBar() {
                 </ul>
               </li>
             </ul>
-            <form className="d-flex">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-light" type="submit">
-                Search
-              </button>
-            </form>
           </Container>
         </Container>
       </Nav>

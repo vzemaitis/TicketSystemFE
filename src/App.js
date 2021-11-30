@@ -7,11 +7,13 @@ import UserAccess from "./components/Layout/pages/UserAccess";
 import Reporting from "./components/Layout/pages/Reporting";
 import NavigationBar from "./components/Layout/navigation-bar/MainNavigationBar";
 import Tools from "./components/Layout/pages/Tools";
+import SideMenu from "./components/Layout/Sidemenu/Sidemenu";
 
 function App() {
   return (
     <div>
       <NavigationBar />
+      <SideMenu />
         <Routes>
           <Route path="/" exact element={<AllTickets />} />
           <Route path="/new-ticket" element={<NewTickets />} />
