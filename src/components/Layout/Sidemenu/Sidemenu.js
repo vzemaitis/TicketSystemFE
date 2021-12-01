@@ -1,40 +1,67 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Container } from "react-bootstrap";
 
 function SideMenu() {
   return (
-    <div 
-      class="d-flex flex-column flex-shrink -0 p-3 bg-secondary"
-      style={{ height: '100%', width: "280px" }}
+    <div className='position-fixed'
+      className="flex-column flex-shrink-0 p-3 bg-dark vh-100"
+      style={{ width: "280px" }}
     >
-      <ul class="nav nav-pills flex-column mb-auto">
-        <li class="nav-item">
-          <a href="#" class="nav-link link-light" aria-current="page">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link link-light">
-            Dashboard
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link link-light">
-            Orders
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link link-light">
-            Products
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link link-light">
-            Customers
-          </a>
-        </li>
-      </ul>
-      <hr />
-      <div class="dropdown">
+      <Container className="position-start">
+        <ul className="nav nav-pills flex-column mb-auto">
+          <li className="nav-item">
+            <a className="nav-link link-light">Placeholder</a>
+          </li>
+        </ul>
+        <ul className="nav nav-pills flex-column mb-auto">
+          <li className="nav-item">
+            <a className="nav-link link-light">Placeholder</a>
+          </li>
+        </ul>
+        <ul className="nav nav-pills flex-column mb-auto">
+          <li className="nav-item">
+            <a className="nav-link link-light">Placeholder</a>
+          </li>
+        </ul>
+        <ul className="nav nav-pills flex-column mb-auto">
+          <li className="nav-item">
+            <a className="nav-link link-light">Placeholder</a>
+          </li>
+        </ul>
+        <ul className="nav nav-pills flex-column mb-auto">
+          <li className="nav-item">
+            <a className="nav-link link-light">Placeholder</a>
+          </li>
+        </ul>
+        <hr className='bg-light' />
+        <ul className="nav nav-pills flex-column mb-auto">
+          <li className="nav-item">
+            <a className="nav-link link-light">Placeholder</a>
+          </li>
+        </ul>
+        <ul className="nav nav-pills flex-column mb-auto">
+          <li className="nav-item">
+            <a className="nav-link link-light">Placeholder</a>
+          </li>
+        </ul>
+        <ul className="nav nav-pills flex-column mb-auto">
+          <li className="nav-item">
+            <a className="nav-link link-light">Placeholder</a>
+          </li>
+        </ul>
+        <ul className="nav nav-pills flex-column mb-auto">
+          <li className="nav-item">
+            <a className="nav-link link-light">Placeholder</a>
+          </li>
+        </ul>
+        <ul className="nav nav-pills flex-column mb-auto">
+          <li className="nav-item">
+            <a className="nav-link link-light">Placeholder</a>
+          </li>
+        </ul>
+        <hr className='bg-light' />
+      </Container>
+      <div className="dropdown position-fixed bottom-0 start-0 p-3 m-2">
         <a
           href="#"
           class="d-flex align-items-center link-light text-decoration-none dropdown-toggle"
@@ -43,7 +70,7 @@ function SideMenu() {
           aria-expanded="false"
         >
           <img
-            src="https://www.pinclipart.com/picdir/middle/165-1653686_female-user-icon-png-download-user-colorful-icon.png"
+            src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
             alt=""
             width="32"
             height="32"
@@ -55,11 +82,6 @@ function SideMenu() {
           class="dropdown-menu text-small shadow"
           aria-labelledby="dropdownUser2"
         >
-          <li>
-            <a class="dropdown-item" href="#">
-              New project...
-            </a>
-          </li>
           <li>
             <a class="dropdown-item" href="#">
               Settings

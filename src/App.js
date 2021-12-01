@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Container } from 'react-bootstrap';
 
 import AllTickets from "./components/pages/Alltickets";
 import NewTickets from "./components/pages/NewTickets";
@@ -13,7 +14,9 @@ function App() {
   return (
     <div>
       <NavigationBar />
-      <SideMenu />
+      <div class='row'>
+      <Container className='col-2 ' ><SideMenu/></Container>
+      <Container className='col-10'>
         <Routes>
           <Route path="/" exact element={<AllTickets />} />
           <Route path="/new-ticket" element={<NewTickets />} />
@@ -21,6 +24,8 @@ function App() {
           <Route path="/reporting" element={<Reporting />} />
           <Route path="/tools" element={<Tools />} />
         </Routes>
+        </Container>
+        </div>
     </div>
   );
 }

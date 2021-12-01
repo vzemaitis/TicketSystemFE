@@ -1,19 +1,18 @@
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Nav, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 import Logo from "./nav-main-logo.svg";
 
 function NavigationBar() {
   return (
     <header>
-      <Nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <Container className="container-fluid">
+      <div className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container-fluid ms-2 ps-5" >
           <img
             className="img-fluid image-decoration-none"
             src={Logo}
             alt=""
-            width="150"
           />
           <button
             className="navbar-toggler"
@@ -26,10 +25,10 @@ function NavigationBar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <Container className="collapse navbar-collapse" id="navbarScroll">
+          <div className="collapse navbar-collapse" id="navbarScroll" >
             <ul
               className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-              style={{ scrollHeight: "100px" }}
+              
             >
               <Link to="/" className="nav-item" class="text-decoration-none">
                 <a className="nav-link" aria-current="page">
@@ -101,9 +100,9 @@ function NavigationBar() {
                 </ul>
               </li>
             </ul>
-          </Container>
-        </Container>
-      </Nav>
+          </div>
+        </div>
+      </div>
     </header>
   );
 }
