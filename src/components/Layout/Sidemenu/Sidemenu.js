@@ -46,7 +46,7 @@ function SideMenu() {
         </ul>
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item">
-            <a className="nav-link link-light">Placeholder</a>
+            <a className="nav-link link-light">Notifications</a>
           </li>
         </ul>
         <ul className="nav nav-pills flex-column mb-auto">
