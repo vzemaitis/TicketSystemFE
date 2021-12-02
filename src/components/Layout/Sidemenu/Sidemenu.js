@@ -64,7 +64,7 @@ function SideMenu() {
       <div className="dropdown position-fixed bottom-0 start-0 p-3 m-2">
         <a
           href="#"
-          class="d-flex align-items-center link-light text-decoration-none dropdown-toggle"
+          class="d-flex align-items-center link-secondary text-decoration-none dropdown-toggle"
           id="dropdownUser2"
           data-bs-toggle="dropdown"
           aria-expanded="false"
