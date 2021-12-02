@@ -15,7 +15,7 @@ function App() {
     <div>
       <NavigationBar />
       <div class='row'>
-      <Container className='col-2 ' ><SideMenu/></Container>
+      <Container className='col-2' ><SideMenu/></Container>
       <Container className='col-10'>
         <Routes>
           <Route path="/" exact element={<AllTickets />} />

@@ -83,12 +83,12 @@ function SideMenu() {
           aria-labelledby="dropdownUser2"
         >
           <li>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" >
               Settings
             </a>
           </li>
           <li>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" >
               Profile
             </a>
           </li>
@@ -96,7 +96,7 @@ function SideMenu() {
             <hr class="dropdown-divider" />
           </li>
           <li>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" >
               Sign out
             </a>
           </li>
