@@ -16,11 +16,7 @@ function App() {
     <div>
       <NavigationBar />
       <div class='row'>
-      <Container className='col-2 ' ><SideMenu/>
-      <Routes>
-        <Route path="/notifications" element={<Notifications />} />
-      </Routes>
-      </Container>
+      <Container className='col-2 ' ><SideMenu/></Container>
       <Container className='col-10'>
         <Routes>
           <Route path="/" exact element={<AllTickets />} />
@@ -28,6 +24,7 @@ function App() {
           <Route path="/user-access" element={<UserAccess />} />
           <Route path="/reporting" element={<Reporting />} />
           <Route path="/tools" element={<Tools />} />
+          <Route path="/notifications" element={<Notifications />} />
         </Routes>
         </Container>
         </div>
