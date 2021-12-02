@@ -9,13 +9,18 @@ import Reporting from "./components/pages/Reporting";
 import NavigationBar from "./components/Layout/navigation-bar/MainNavigationBar";
 import Tools from "./components/pages/Tools";
 import SideMenu from "./components/Layout/Sidemenu/Sidemenu";
+import Notifications from "./components/pages/Notifications";
 
 function App() {
   return (
     <div>
       <NavigationBar />
       <div class='row'>
-      <Container className='col-2 ' ><SideMenu/></Container>
+      <Container className='col-2 ' ><SideMenu/>
+      <Routes>
+        <Route path="/notifications" element={<Notifications />} />
+      </Routes>
+      </Container>
       <Container className='col-10'>
         <Routes>
           <Route path="/" exact element={<AllTickets />} />
