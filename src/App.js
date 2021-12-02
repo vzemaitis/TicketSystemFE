@@ -9,6 +9,7 @@ import Reporting from "./components/pages/Reporting";
 import NavigationBar from "./components/Layout/navigation-bar/MainNavigationBar";
 import Tools from "./components/pages/Tools";
 import SideMenu from "./components/Layout/Sidemenu/Sidemenu";
+import Notifications from "./components/pages/Notifications";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/user-access" element={<UserAccess />} />
           <Route path="/reporting" element={<Reporting />} />
           <Route path="/tools" element={<Tools />} />
+          <Route path="/notifications" element={<Notifications />} />
         </Routes>
         </Container>
         </div>
