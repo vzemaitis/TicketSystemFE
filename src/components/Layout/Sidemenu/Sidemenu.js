@@ -64,7 +64,7 @@ function SideMenu() {
       <div className="dropdown position-fixed bottom-0 start-0 p-3 m-2">
         <a
           href="#"
-          class="d-flex align-items-center link-light text-decoration-none dropdown-toggle"
+          class="d-flex align-items-center link-secondary text-decoration-none dropdown-toggle"
           id="dropdownUser2"
           data-bs-toggle="dropdown"
           aria-expanded="false"
@@ -83,12 +83,12 @@ function SideMenu() {
           aria-labelledby="dropdownUser2"
         >
           <li>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" >
               Settings
             </a>
           </li>
           <li>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" >
               Profile
             </a>
           </li>
@@ -96,7 +96,7 @@ function SideMenu() {
             <hr class="dropdown-divider" />
           </li>
           <li>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" >
               Sign out
             </a>
           </li>
