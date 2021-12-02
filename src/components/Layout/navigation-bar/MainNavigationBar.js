@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container } from "react-bootstrap";
 
 import Logo from "./nav-main-logo.svg";
 
