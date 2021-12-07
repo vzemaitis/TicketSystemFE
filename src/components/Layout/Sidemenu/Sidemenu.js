@@ -61,7 +61,7 @@ function SideMenu() {
         </ul>
         <hr className='bg-light' />
       </Container>
-      <div className="dropdown position-fixed bottom-0 start-0 p-3 m-2">
+      <div className="dropdown position-relative p-3">
         <a
           href="#"
           class="d-flex align-items-center link-secondary text-decoration-none dropdown-toggle"
