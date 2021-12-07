@@ -5,7 +5,7 @@ function SideMenu() {
   return (
     <div className='position-fixed'
       className="flex-column flex-shrink-0 p-3 bg-dark vh-100"
-      style={{ width: "280px" }}
+      style={{ width: "220px" }}
     >
       <Container className="position-start">
         <ul className="nav nav-pills flex-column mb-auto">
