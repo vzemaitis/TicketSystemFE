@@ -15,9 +15,9 @@ function App() {
   return (
     <div>
       <NavigationBar />
-      <div class='row'>
+      <div className='row'>
       <Container className='col-2' ><SideMenu/></Container>
-      <Container className='col-10'>
+      <Container className='col-10' style={{ height: 'calc(100vh - 85px)', overflowY: 'scroll' }}>
         <Routes>
           <Route path="/" exact element={<AllTickets />} />
           <Route path="/new-ticket" element={<NewTickets />} />

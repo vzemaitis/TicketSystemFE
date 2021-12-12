@@ -9,7 +9,7 @@ function Notifications() {
     </div>
 
     <div className="table-container">
-        <table class="info box">
+        <table className="info box">
             <th><input type="checkbox" /></th>
             <th>Notification</th>
             <th>Ticket#</th>

@@ -3,8 +3,7 @@ import { Container } from "react-bootstrap";
 
 function SideMenu() {
   return (
-    <div className='position-fixed'
-      className="flex-column flex-shrink-0 p-3 bg-dark vh-100"
+    <div className='position-fixed flex-column flex-shrink-0 p-3 bg-dark vh-100'
       style={{ width: "220px" }}
     >
       <Container className="position-start">
@@ -61,10 +60,10 @@ function SideMenu() {
         </ul>
         <hr className='bg-light' />
       </Container>
-      <div className="dropdown position-relative p-3">
+      <div className="dropdown position ">
         <a
           href="#"
-          class="d-flex align-items-center link-secondary text-decoration-none dropdown-toggle"
+          className="d-flex align-items-center link-secondary text-decoration-none dropdown-toggle"
           id="dropdownUser2"
           data-bs-toggle="dropdown"
           aria-expanded="false"
@@ -74,29 +73,29 @@ function SideMenu() {
             alt=""
             width="32"
             height="32"
-            class="rounded-circle me-2"
+            className="rounded-circle me-2"
           />
           <strong>User</strong>
         </a>
         <ul
-          class="dropdown-menu text-small shadow"
+          className="dropdown-menu text-small shadow"
           aria-labelledby="dropdownUser2"
         >
           <li>
-            <a class="dropdown-item" >
+            <a className="dropdown-item" >
               Settings
             </a>
           </li>
           <li>
-            <a class="dropdown-item" >
+            <a className="dropdown-item" >
               Profile
             </a>
           </li>
           <li>
-            <hr class="dropdown-divider" />
+            <hr className="dropdown-divider" />
           </li>
           <li>
-            <a class="dropdown-item" >
+            <a className="dropdown-item" >
               Sign out
             </a>
           </li>

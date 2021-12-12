@@ -5,8 +5,8 @@ import Logo from "./nav-main-logo.svg";
 
 function NavigationBar() {
   return (
-    <header>
-      <div className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header style={{ marginBottom: '50px' }}>
+      <div className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div className="container-fluid ms-2 ps-5" >
           <img
             className="img-fluid image-decoration-none"
@@ -27,24 +27,20 @@ function NavigationBar() {
           <div className="collapse navbar-collapse" id="navbarScroll" >
             <ul
               className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-              
             >
-              <Link to="/" className="nav-item" class="text-decoration-none">
-                <a className="nav-link" aria-current="page">
-                  All Tickets
-                </a>
+              <Link to="/" className="nav-link text-decoration-none">
+                All Tickets
               </Link>
               <Link
                 to="/new-ticket"
-                className="nav-item"
-                class="text-decoration-none"
+                className="nav-link text-decoration-none"
               >
-                <a className="nav-link">New Ticket</a>
+                New Ticket
               </Link>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  id="navbarScrollingDropdown"
+                  id="navbarScrollingDropdowna"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -53,7 +49,7 @@ function NavigationBar() {
                 </a>
                 <ul
                   className="dropdown-menu"
-                  aria-labelledby="navbarScrollingDropdown"
+                  aria-labelledby="navbarScrollingDropdowna"
                 >
                   <a
                     className="dropdown-item"
